@@ -1,0 +1,21 @@
+
+<div class = "parent-div">
+	<div class="carousel-wrapper arrow-slide">
+
+		{% if title %}
+		<h3>{{ title }}</h3>
+		{% endif %}
+		{% for row in rows %}
+		{%
+			set row_classes = [
+			default_row_class ? 'views-row card',
+			]
+		%}
+		<div{{ row.attributes.addClass(row_classes) }}>
+			{{- row.content -}}
+		</div>
+		{% endfor %}
+  		<div class="left-arrow"></div>
+  		<div class="right-arrow"></div>	
+	</div>
+</div>

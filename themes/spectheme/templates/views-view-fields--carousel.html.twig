@@ -1,0 +1,49 @@
+<div class="carousel-parent-wrapper">
+    <div class="carousel-image">
+        {{ fields.field_pic.content }}
+        <div class="star-mark">
+            <i class="ri-star-fill"></i>
+        </div>
+        <div class="price">
+            {{ fields.field_price.content }}
+        </div>
+    </div>
+    <div class="carousel-body">
+        <div class="title">
+            {{ fields.title.content }}
+        </div>
+        <div class="tag">
+            <i class="ri-price-tag-3-fill"></i>
+            {{ fields.field_post.content }}
+        </div>
+        <div class="date">
+            <i class="ri-calendar-event-fill"></i>
+            {{ fields.field_date.content }}
+        </div>
+        <div class="location">
+            <i class="ri-map-pin-2-line"></i>
+            {{ fields.field_location.content }}
+        </div>
+    </div>
+    <div class="carousel-bottom">
+        <ul>
+            <li>
+                {% if fields.field_heart.content|striptags|trim == 1 %}
+                <i class="ri-heart-fill"></i>
+                {% endif %}
+                {% if fields.field_heart.content|striptags|trim == 0 %}
+                <i class="ri-heart-line"></i>
+                {% endif %}
+            </li>
+            <li>
+                <i class="ri-download-cloud-fill"></i>
+            </li>
+             <li>
+                <i class="ri-share-fill"></i>
+            </li>
+            <li>
+                {{ fields.view_node.content }}
+            </li>
+        </ul>
+    </div>
+</div>

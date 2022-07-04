@@ -1,0 +1,32 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css: {type: external}
+      //netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css: {type: external}
+      css/main.css: {}
+      //fonts.googleapis.com: {type: external}
+      //fonts.gstatic.com: {type: external}
+      //fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap: {type: external}
+      //cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css: {type: external}
+  
+  js:
+    js/main.js: {}
+    //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js: {type: external}
+    //netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js: {type: external}
+    
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+# fontawesome:
+#   version: 4.7.0
+#   remote: //use.fontawesome.com/
+#   js:
+#     //use.fontawesome.com/f479fb1064.js: {}
+#   license:
+#     name: MIT
+#     url: //opensource.org/licenses/mit-license.html
+#     gpl-compatible: true
