@@ -8,7 +8,7 @@
 		{% for row in rows %}
 		{%
 			set row_classes = [
-			default_row_class ? 'views-row',
+			default_row_class ? 'views-row card',
 			]
 		%}
 		<div{{ row.attributes.addClass(row_classes) }}>
